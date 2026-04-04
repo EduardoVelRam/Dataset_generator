@@ -8,7 +8,8 @@ paises = {
     2: "España",
     3: "Argentina",
     4: "Colombia",
-    5: "Chile"
+    5: "Chile",
+    6: "Reapública Dominicana".
 }
 
 deportes = {
@@ -16,16 +17,17 @@ deportes = {
     2: "Baloncesto",
     3: "Tenis",
     4: "Natación",
-    5: "Atletismo"
+    5: "Atletismo",
+    6: "Beisbol"
 }
 
 nombres = [
     "Juan", "María", "Luis", "Ana", "Carlos", "Laura",
-    "Pedro", "Sofía", "Diego", "Valeria", "Jorge", "Camila"
+    "Pedro", "Sofía", "Diego", "Valeria", "Jorge", "Camila", "Rene", "Marlen", "Diana"
 ]
 
 apellidos = [
-    "García", "Martínez", "López", "Hernández",
+    "García", "Martínez", "López", "Hernández", "Sanchez", "Montero", "Velasco", "Huitron",
     "González", "Pérez", "Sánchez", "Ramírez"
 ]
 
@@ -45,7 +47,7 @@ for i in range(1, 101):
         "id": i,  # PRIMARY KEY
         "nombre": nombre_completo,
         "edad": random.randint(18, 70),
-        "pais_id": pais_id,  # FOREIGN KEY
+        "pais_id": pais_id,  # FOREIGN KEY in case there is other data set
         "nacionalidad": paises[pais_id],
         "deporte_id": deporte_id,  # FOREIGN KEY
         "deporte_favorito": deportes[deporte_id],
