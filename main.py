@@ -12,7 +12,7 @@ paises = {
     6: "Reapública Dominicana".
 }
 
-deportes = {
+sports = {
     1: "Fútbol",
     2: "Baloncesto",
     3: "Tenis",
@@ -39,7 +39,7 @@ data = []
 
 for i in range(1, 101):
     pais_id = random.choice(list(paises.keys()))
-    deporte_id = random.choice(list(deportes.keys()))
+    sport_id = random.choice(list(sports.keys()))
 
     nombre_completo = f"{random.choice(nombres)} {random.choice(apellidos)}"
 
@@ -49,8 +49,8 @@ for i in range(1, 101):
         "edad": random.randint(18, 70),
         "pais_id": pais_id,  # FOREIGN KEY in case there is other data set
         "nacionalidad": paises[pais_id],
-        "deporte_id": deporte_id,  # FOREIGN KEY
-        "deporte_favorito": deportes[deporte_id],
+        "deporte_id": sport_id,  # FOREIGN KEY
+        "deporte_favorito": sports[sport_id],
         "estado_civil": random.choice(estados_civiles)
     }
 
