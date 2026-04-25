@@ -5,11 +5,20 @@ import pandas as pd
 
 paises = {
     1: "México",
-    2: "España",
+    2: "Panamá",
     3: "Argentina",
     4: "Colombia",
     5: "Chile",
-    6: "Reapública Dominicana".
+    6: "Uruguay",
+    7: "Brasil",
+    8: "Costa Rica",
+    9: "República Dominicana",
+    10: "El Salvador",
+    11: "Belice",
+    12: "Canadá",
+    13: "Estados Unidos",
+    14: "Puerto Rico",
+    15: "Alaska".
 }
 
 sports = {
@@ -18,17 +27,20 @@ sports = {
     3: "Tenis",
     4: "Natación",
     5: "Atletismo",
-    6: "Beisbol"
+    6: "Beisbol",
+    7: "Clavados",
+    8: "Golf",
+    9: "Volleyball"
 }
 
 nombres = [
-    "Juan", "María", "Luis", "Ana", "Carlos", "Laura",
+    "Juan", "María", "Luis", "Ana", "Carlos", "Laura", "Elena", "Perla", "Samuel", "Emiliano", "Ángel",
     "Pedro", "Sofía", "Diego", "Valeria", "Jorge", "Camila", "Rene", "Marlen", "Diana"
 ]
 
 apellidos = [
     "García", "Martínez", "López", "Hernández", "Sanchez", "Montero", "Velasco", "Huitron",
-    "González", "Pérez", "Sánchez", "Ramírez"
+    "González", "Pérez", "Sánchez", "Ramírez", "Ramos", 
 ]
 
 estados_civiles = ["Soltero", "Casado", "Divorciado", "Viudo"]
